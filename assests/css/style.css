@@ -1,0 +1,71 @@
+/*General stylings*/
+*{
+  padding: 0;
+  margin: 0;
+}
+/*Define the screen of mobile devices*/
+@media(max-width:760px){
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .logo a{
+    color: #36B37E;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .desktop_menu{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile_menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .mobile_menu p{
+    background-color: black;
+    padding: 2px 15px 2px 15px;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    padding-top: 100px;
+    gap: 20px;
+    background: url("../images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px 0;
+  }
+  .home h1{
+    font-size: 40px;
+  }
+  .home h1 span{
+    colour:#36B37E;
+  }
+  .home p{
+    font-size: 26;
+  }
+  .home ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+
+  }
+  .home ul li a img{
+    width: 20px;
+  }
+  
+}
