@@ -36,6 +36,10 @@
     gap: 5px;
   }
 
+  footer p {
+    text-align: center;
+  }
+
   .mobile_menu p {
     background-color: black;
     padding: 2px 15px 2px 15px;
@@ -68,16 +72,30 @@
     font-size: 26px;
   }
 
+  footer ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
   .home ul {
     display: flex;
     gap: 15px;
     list-style: none;
   }
-
+  img{
+    width: 20px;
+  }
+.footer ul li {
+   width: 20px;
+  }
   .project_card img {
     height: 252px;
     width: 327px;
     background-color: #ebf0ee;
+  }
+
+  .footer ul li a img {
+    width: 20px;
   }
 
   .home ul li a img {
@@ -145,6 +163,14 @@
     list-style: none;
   }
 
+  .contact_input li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+  }
+
   .project_card ul li {
     font-size: 18px;
     background-color: #ebf0ee;
@@ -159,15 +185,17 @@
     border: none;
     font-size: 15px;
   }
-  /*about_styling*/
-  .about{
+
+  /* about_styling */
+  .about {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
   }
-  .about_text{
+
+  .about_text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,50 +203,50 @@
     gap: 20px;
     text-align: center;
   }
-  .about_text h2{
+
+  .about_text h2 {
     font-size: 50px;
     font-weight: 700;
   }
-  .about_text p{
-    font-size: 26px;
 
+  .about_text p {
+    font-size: 26px;
   }
-  .about_text button{
+
+  .about_text button {
     background-color: #36b37e;
     padding: 5px 10px;
     color: #fff;
     border: none;
     font-size: 15px;
-     
   }
-  .about_cards{
+
+  .about_cards {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap:30px ;
+    gap: 30px;
   }
-  .about_card{
+
+  .about_card {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap:30px ;
+    gap: 30px;
     width: 327px;
     height: 316px;
     border: 1px solid #ebf0ee;
     background-color: #ebf0ee;
-    border-radius: 8px; 
+    border-radius: 8px;
   }
-  .about_card img{
-    width: 100px;
 
-  }
-  .about_card h3{
+  .about_card h3 {
     font-size: 30px;
-
   }
-  .about_card ul{
+
+  .about_card ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,11 +254,78 @@
     gap: 20px;
     flex-wrap: wrap;
   }
-  .about_card ul li{
-     font-size: 18px;
+
+  .about_card ul li {
+    font-size: 18px;
     background-color: #fff;
     padding: 5px;
     border-radius: 5px;
     color: #36b37e;
+  }
+
+  /* contact_styling */
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 100px 10px;
+    border-bottom: 1px solid #36b37e;
+    border-radius: 10px;
+  }
+
+  .contact_text p {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .contact_form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact_form form input {
+    width: 300px;
+    padding: 10px 0 10px 10px;
+    border-radius: 8px;
+    border: 1px solid #36b37e;
+  }
+
+  .contact_form form textarea {
+    width: 290px;
+    padding: 10px 10px 90px 10px;
+    border-radius: 8px;
+    border: 1px solid #36b37e;
+  }
+
+  .contact_form form button {
+    background-color: #36b37e;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .mail a {
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #ebf0ee;
   }
 }
