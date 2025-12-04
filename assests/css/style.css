@@ -77,17 +77,31 @@
     gap: 15px;
     list-style: none;
   }
+
   .home ul {
     display: flex;
     gap: 15px;
     list-style: none;
   }
-  img{
+
+  img {
     width: 20px;
   }
-.footer ul li {
-   width: 20px;
+
+  footer ul li {
+    width: 20px;
   }
+
+  .contact_input li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+  }
+
+
+
   .project_card img {
     height: 252px;
     width: 327px;
@@ -161,14 +175,6 @@
     display: flex;
     gap: 5px;
     list-style: none;
-  }
-
-  .contact_input li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
   }
 
   .project_card ul li {
