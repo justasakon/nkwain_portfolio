@@ -197,6 +197,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
+  
   }
 
   .about_text {
@@ -206,6 +207,11 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+      background: url(../images/Frames.png),url(../images/mask_group.png);
+  background-repeat: no-repeat,no-repeat;
+  background-position: left bottom,right top;
+  background-size: 80px, 80px;
+  padding: 0 10px;
   }
 
   .about_text h2 {
@@ -277,6 +283,11 @@
     padding: 100px 10px;
     border-bottom: 1px solid #36b37e;
     border-radius: 10px;
+     background: url(../images/frame.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 80px, 80px;
+    padding: 64px 0px;
   }
 
   .contact_text p {
@@ -321,6 +332,7 @@
     text-decoration: none;
     color: #000;
     font-size: 22px;
+   
   }
 
   footer {
@@ -331,5 +343,7 @@
     flex-direction: column;
     padding: 50px 0;
     background-color: #ebf0ee;
+   
+    
   }
 }
