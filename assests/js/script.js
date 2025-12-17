@@ -74,7 +74,7 @@ function createProjectCards(project) {
 }
 
 //inserting project cards in the projects section
-function insertCards(){
+function insertProjectCards(){
   const projectsContainer = document.getElementById('project_cards');
   if (!projectsContainer) {
     // Avoid throwing if the target container isn't present in the DOM
@@ -88,5 +88,63 @@ function insertCards(){
     projectsContainer.appendChild(projectCard);
   });
 }
-//event listeners to trigger the insertion of cards into the DOM
-document.addEventListener('DOMContentLoaded',insertCards);
+     //an array of objects to store about cards
+     const about = [
+      {
+        image:'#',
+        title:'Languages',
+        technologies:['JavaScript','Ruby','HTML','CSS'],
+      },
+      {
+        image:'#',
+        title:'Frameworks',
+        technologies:['React.js','Ruby on Rails','RSpec','Capybara','Selenium'],
+      },
+      {
+        image:'#',
+        title:'Skills',
+        technologies:['Database management','Version Control','CLI','Web Development','API Design'],
+      },
+     ];
+
+     //function to create about card
+     function createAboutCard(item){
+      const card = document.createElement('div');
+      card.classList.add('about_card');
+      const cardImage = document.createElement('img');
+      cardImage.src = item.image;
+      cardImage.alt = 'about card image';
+      card.appendChild(cardImage);
+      const cardTitle = document.createElement('h3');
+      cardTitle.innerHTML = item.title;
+      card.appendChild(cardTitle);
+      const cardList = document.createElement('ul');
+      item.technologies.forEach((element) =>{
+        const listItem = document.createElement('li');
+        listItem.innerHTML = element;
+        cardList.appendChild(listItem);
+      });
+      card.appendChild(cardList);
+      return card;
+     }
+     //inserting about cards in about section
+     function insertAboutCards(){
+      const aboutContainer = document.getElementById('about_cards');
+      if(!aboutContainer) {
+    // Avoid throwing if the target container isn't present in the DOM
+    // (useful during testing or on pages that don't include the about section)
+    // eslint-disable-next-line no-console
+    console.warn('No element with id "about_cards" found. Skipping card insertion.');
+    return;
+      }
+       about.forEach((item) => {
+    const aboutCard = createAboutCard(item);
+    aboutContainer.appendChild(aboutCard);
+  });
+     }
+
+// Run both insertions when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  insertProjectCards();
+  insertAboutCards();
+});
