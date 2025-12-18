@@ -104,6 +104,13 @@ footer ul li {
   background-color: #ebf0ee;
 }
 
+.modal_image_container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
 .footer ul li a img {
   width: 20px;
 }
@@ -340,6 +347,14 @@ footer {
   background-color: #ebf0ee;
 }
 
+.modal_container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  list-style: none;
+}
+
 .desktop_menu.active {
   display: flex;
   background-color: #000;
@@ -361,10 +376,27 @@ footer {
   padding: 100px 10px;
 }
 
+.modal_links a {
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #36b37e;
+  text-align: center;
+}
+
 .desktop_menu.active ul li a {
   color: #fff;
   font-size: 26px;
   text-decoration: none;
+}
+
+.modal_container p {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  color: #000;
 }
 
 .mobile_menu.active {
@@ -389,6 +421,73 @@ footer {
   rotate: -45deg;
   position: relative;
   top: -12px;
+}
+
+/* General modal styling */
+.modal_container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.modal_content {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  overflow-y: auto;
+  position: relative;
+  width: min(95%, 900px);
+  max-height: calc(100vh - 4rem);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.modal_image_container {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.close_button {
+  font-size: 28px;
+  z-index: 2000;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #000;
+  opacity: 50%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 50%;
+}
+
+.modal_container h3 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.modal_container ul li {
+  font-size: 18px;
+  background-color: #ebf0ee;
+  padding: 4px;
+  border-radius: 5px;
+  text-wrap: nowrap;
+}
+
+.modal_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
